@@ -1,4 +1,4 @@
-# DO NOT FORK THIS UNTIL I GIVE THE GREEN LIGHT
+# Do not fork this until I give the go-ahead
 
 # Final project
 
