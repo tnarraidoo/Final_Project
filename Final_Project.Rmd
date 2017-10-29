@@ -1,0 +1,51 @@
+---
+title: "Final Project"
+author: "WRITE GROUP MEMBERS NAMES HERE!"
+date: "December 22, 2017"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 2
+    collapsed: false
+    smooth_scroll: false
+    df_print: kable
+---
+
+
+## Load all packages and data
+
+```{r setup, include=FALSE}
+
+```
+
+
+## Main analysis
+
+```{r, message=FALSE, warning=FALSE, fig.width=8, fig.height=4.5, echo=FALSE}
+
+```
+
+
+## Create submission
+
+
+## Citations and references
+
+All citations and references must be included here.
+
+
+## Supplementary materials
+
+Write your extra materials here i.e. extra info for people who want to know
+more.
+
+```{r, message=FALSE, warning=FALSE, fig.width=8, fig.height=4.5, echo=FALSE}
+
+
+```
+
+
+
+
+
