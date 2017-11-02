@@ -133,8 +133,8 @@ $(document).ready(function ()  {
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
     };
-    options.showAndHide = true;
-    options.smoothScroll = true;
+    options.showAndHide = false;
+    options.smoothScroll = false;
 
     // tocify
     var toc = $("#TOC").tocify(options).data("toc-tocify");
@@ -196,6 +196,12 @@ div.tocify {
   border-radius: 0px;
 }
 
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
 
 </style>
 
@@ -222,22 +228,37 @@ div.tocify {
 </div>
 
 
-<div id="load-all-packages-and-data" class="section level2">
-<h2>Load all packages and data</h2>
+<div id="load-all-packages" class="section level2">
+<h2>Load all packages</h2>
 </div>
-<div id="main-analysis" class="section level2">
-<h2>Main analysis</h2>
+<div id="load-data-and-perform-data-cleaning" class="section level2">
+<h2>Load data and perform data cleaning</h2>
+<p>Please delete all “notes” before submission.</p>
+<p>Note: CSV/data files should be read assuming they are in the <code>data</code> folder. In other words, load data via <code>read_csv(&quot;data/CSV_NAME.csv&quot;)</code> and not via <code>read_csv(&quot;/Users/aykim/Documents/MATH495/Final_Project/data/CSV_NAME.csv&quot;)</code></p>
+</div>
+<div id="eda-visualizations-and-tables" class="section level2">
+<h2>EDA visualizations and tables</h2>
+<p>Note: If you had to illustrate using no modelling but only graphs and tables which variables have the most predictive power, which would you include?</p>
+<ul>
+<li>Perform a cross-validation on only the final/ultimate model used for your submission.</li>
+<li>The “score” in question should be the same as used to compute the Kaggle leaderboard. In other words, your estimated score should be roughly equal to the score returned by Kaggle after your submission.</li>
+</ul>
+</div>
+<div id="crossvalidation-of-ultimate-model" class="section level2">
+<h2>Crossvalidation of ultimate model</h2>
+<p>Note: Hardcode your crossvalidation here i.e. do not use built-in crossvalidation options.</p>
 </div>
 <div id="create-submission" class="section level2">
 <h2>Create submission</h2>
+<p>Note: Output a CSV using <code>write_csv(DATAFRAME_NAME, path=&quot;data/SUBMISSION_NAME.csv&quot;)</code> that is Kaggle submitable. This submission should return a Kaggle score that is close to your crossvalidated score.</p>
 </div>
 <div id="citations-and-references" class="section level2">
 <h2>Citations and references</h2>
-<p>All citations and references must be included here.</p>
+<p>Note: All citations and references must be included here.</p>
 </div>
 <div id="supplementary-materials" class="section level2">
 <h2>Supplementary materials</h2>
-<p>Write your extra materials here i.e. extra info for people who want to know more.</p>
+<p>Note: Anything else you’ve tried that you’d like to include, but isn’t essential to the above, like other EDA’s, other modeling approaches you’ve tried, etc. Please set the R code chunk <code>eval=FALSE</code> here so that default is that R Markdown doesn’t run the code, but a user can flip this switch if they are curious.</p>
 </div>
 
 

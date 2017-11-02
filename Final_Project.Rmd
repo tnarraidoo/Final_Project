@@ -5,42 +5,84 @@ date: "December 22, 2017"
 output:
   html_document:
     toc: true
-    toc_float: true
     toc_depth: 2
-    collapsed: false
-    smooth_scroll: false
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
     df_print: kable
 ---
 
 
-## Load all packages and data
-
-```{r setup, include=FALSE}
-
-```
 
 
-## Main analysis
+## Load all packages
 
 ```{r, message=FALSE, warning=FALSE, fig.width=8, fig.height=4.5, echo=FALSE}
 
 ```
+
+
+
+## Load data and perform data cleaning
+
+Please delete all "notes" before submission.
+
+Note: CSV/data files should be read assuming they are in the `data` folder. In
+other words, load data via `read_csv("data/CSV_NAME.csv")` and not via
+`read_csv("/Users/aykim/Documents/MATH495/Final_Project/data/CSV_NAME.csv")`
+
+```{r, message=FALSE, warning=FALSE, fig.width=8, fig.height=4.5, echo=FALSE}
+
+```
+
+
+
+## EDA visualizations and tables
+
+Note: If you had to illustrate using no modelling but only graphs and tables which
+variables have the most predictive power, which would you include?
+
+* Perform a cross-validation on only the final/ultimate model used for your
+submission.
+* The "score" in question should be the same as used to compute the Kaggle
+leaderboard. In other words, your estimated score should be roughly equal to the
+score returned by Kaggle after your submission.
+
+
+
+## Crossvalidation of ultimate model
+
+Note: Hardcode your crossvalidation here i.e. do not use built-in crossvalidation
+options.
+
+```{r, message=FALSE, warning=FALSE, fig.width=8, fig.height=4.5, echo=FALSE}
+
+```
+
 
 
 ## Create submission
 
+Note: Output a CSV using `write_csv(DATAFRAME_NAME, path="data/SUBMISSION_NAME.csv")`
+that is Kaggle submitable. This submission should return a Kaggle score that is
+close to your crossvalidated score.
+
+
 
 ## Citations and references
 
-All citations and references must be included here.
+Note: All citations and references must be included here.
+
 
 
 ## Supplementary materials
 
-Write your extra materials here i.e. extra info for people who want to know
-more.
+Note: Anything else you've tried that you'd like to include, but isn't essential to
+the above, like other EDA's, other modeling approaches you've tried, etc. Please
+set the R code chunk `eval=FALSE` here so that default is that R Markdown
+doesn't run the code, but a user can flip this switch if they are curious.
 
-```{r, message=FALSE, warning=FALSE, fig.width=8, fig.height=4.5, echo=FALSE}
+```{r, eval=FALSE, message=FALSE, warning=FALSE, fig.width=8, fig.height=4.5, echo=FALSE}
 
 
 ```
